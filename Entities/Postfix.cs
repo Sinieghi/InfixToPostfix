@@ -1,7 +1,6 @@
 
 class Postfix
 {
-    public Stack stack = null;
     public char[] postfix = null;
     static bool IsOperand(char x)
     {
@@ -40,7 +39,7 @@ class Postfix
 
     public void Convert(char[] infix)
     {
-        Stack stack = new() { Size = infix.Length, chars = new char[infix.Length] };
+        Stack<char> stack = new() { Size = infix.Length, chars = new char[infix.Length] };
         postfix = new char[stack.Size];
         int i = 0, j = 0;
         while (infix[i] != '\0')
@@ -74,6 +73,30 @@ class Postfix
             System.Console.WriteLine(postfix[i++]);
         }
 
+    }
+
+    public void Evaluate(char[] postfix)
+    {
+        Stack<int> stack = new() { Size = postfix.Length, chars = new int[postfix.Length] };
+        int i, x1, x2, r;
+
+        for (i = 0; postfix[i] != '\0'; i++)
+        {
+            if (IsOperand(postfix[i])) stack.Push(postfix[i] - '0');
+            else
+            {
+                x2 = stack.Pop(); x1 = stack.Pop();
+                switch (postfix[i])
+                {
+                    case '+': r = x1 + x2; stack.Push(r); break;
+                    case '-': r = x1 - x2; stack.Push(r); break;
+                    case '*': r = x1 * x2; stack.Push(r); break;
+                    case '/': r = x1 / x2; stack.Push(r); break;
+                }
+            }
+        }
+        System.Console.WriteLine(stack.Pop());
+        //return stack.Pop();
     }
 
 }

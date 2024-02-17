@@ -1,10 +1,10 @@
-class Stack
+class Stack<T>
 {
     public int Top { get; set; } = -1;
-    public char[] chars;
+    public T[] chars;
     public int Size { get; set; }
 
-    public void Push(char x)
+    public void Push(T x)
     {
         if (Top == Size - 1) System.Console.WriteLine("Overflow");
         else
@@ -13,17 +13,17 @@ class Stack
             chars[Top] = x;
         }
     }
-    public char Pop()
+    public T Pop()
     {
-        char x = ';';
+        T x = chars[chars.Length - 1];
         if (Top == -1) System.Console.WriteLine("Underflow");
         else x = chars[Top--];
         return x;
     }
-    public char StackTop()
+    public T StackTop()
     {
         if (!IsEmpty()) return chars[Top];
-        return ';';
+        return chars[chars.Length - 1];
     }
     public bool IsEmpty()
     {
