@@ -1,0 +1,14 @@
+e:\DOC\Data_structure-algorithms\code_snippet\InfixToPostfix\bin\Debug\net8.0\InfixToPostfix.exe
+e:\DOC\Data_structure-algorithms\code_snippet\InfixToPostfix\bin\Debug\net8.0\InfixToPostfix.deps.json
+e:\DOC\Data_structure-algorithms\code_snippet\InfixToPostfix\bin\Debug\net8.0\InfixToPostfix.runtimeconfig.json
+e:\DOC\Data_structure-algorithms\code_snippet\InfixToPostfix\bin\Debug\net8.0\InfixToPostfix.dll
+e:\DOC\Data_structure-algorithms\code_snippet\InfixToPostfix\bin\Debug\net8.0\InfixToPostfix.pdb
+e:\DOC\Data_structure-algorithms\code_snippet\InfixToPostfix\obj\Debug\net8.0\InfixToPostfix.GeneratedMSBuildEditorConfig.editorconfig
+e:\DOC\Data_structure-algorithms\code_snippet\InfixToPostfix\obj\Debug\net8.0\InfixToPostfix.AssemblyInfoInputs.cache
+e:\DOC\Data_structure-algorithms\code_snippet\InfixToPostfix\obj\Debug\net8.0\InfixToPostfix.AssemblyInfo.cs
+e:\DOC\Data_structure-algorithms\code_snippet\InfixToPostfix\obj\Debug\net8.0\InfixToPostfix.csproj.CoreCompileInputs.cache
+e:\DOC\Data_structure-algorithms\code_snippet\InfixToPostfix\obj\Debug\net8.0\InfixToPostfix.dll
+e:\DOC\Data_structure-algorithms\code_snippet\InfixToPostfix\obj\Debug\net8.0\refint\InfixToPostfix.dll
+e:\DOC\Data_structure-algorithms\code_snippet\InfixToPostfix\obj\Debug\net8.0\InfixToPostfix.pdb
+e:\DOC\Data_structure-algorithms\code_snippet\InfixToPostfix\obj\Debug\net8.0\InfixToPostfix.genruntimeconfig.cache
+e:\DOC\Data_structure-algorithms\code_snippet\InfixToPostfix\obj\Debug\net8.0\ref\InfixToPostfix.dll
