@@ -5,15 +5,35 @@ class Postfix
     public char[] postfix = null;
     static bool IsOperand(char x)
     {
-        if (x == '+' || x == '-' || x == '*' || x == '/') return false;
+        if (x == '+' || x == '-' || x == '*' || x == '/' || x == '(' || x == ')' || x == '^') return false;
         return true;
     }
-    static int Pre(char x)
+    static int OutStack(char x)
     {
         if (x == '+' || x == '-')
             return 1;
         else if (x == '*' || x == '/')
+            return 3;
+        else if (x == '^')
+            return 6;
+        else if (x == '(')
+            return 7;
+        else if (x == ')')
+            return 0;
+
+        return 0;
+    }
+
+    static int InStack(char x)
+    {
+        if (x == '+' || x == '-')
             return 2;
+        else if (x == '*' || x == '/')
+            return 4;
+        else if (x == '^')
+            return 5;
+        else if (x == '(')
+            return 0;
 
         return 0;
     }
@@ -29,9 +49,16 @@ class Postfix
                 postfix[j++] = infix[i++];
             else
             {
-                if (Pre(infix[i]) > Pre(stack.StackTop()))
+                System.Console.WriteLine(infix[i]);
+                if (OutStack(infix[i]) > InStack(stack.StackTop()))
                     stack.Push(infix[i++]);
-                else postfix[j++] = stack.Pop();
+                else
+                {
+                    if (infix[i] == ')') { postfix[j++] = stack.Pop(); stack.Pop(); }
+                    else
+                        postfix[j++] = stack.Pop();
+                    i++;
+                }
             }
         }
         while (!stack.IsEmpty())

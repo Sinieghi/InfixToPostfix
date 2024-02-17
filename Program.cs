@@ -2,7 +2,8 @@
 {
     static void Main(string[] args)
     {
-        char[] infix = ['a', '+', 'b', '*', 'c', '-', 'd', '/', 'e', '\0'];
+        // char[] infix = ['a', '+', 'b', '*', 'c', '-', 'd', '/', 'e', '\0'];
+        char[] infix = ['(', '(', 'a', '+', 'b', ')', '*', 'c', ')', '-', 'd', '^', 'e', '^', 'f', '\0'];
         Postfix postfix = new();
         postfix.Convert(infix);
         // postfix.Display();

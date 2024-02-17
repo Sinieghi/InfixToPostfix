@@ -12,3 +12,4 @@ e:\DOC\Data_structure-algorithms\code_snippet\InfixToPostfix\obj\Debug\net8.0\re
 e:\DOC\Data_structure-algorithms\code_snippet\InfixToPostfix\obj\Debug\net8.0\InfixToPostfix.pdb
 e:\DOC\Data_structure-algorithms\code_snippet\InfixToPostfix\obj\Debug\net8.0\InfixToPostfix.genruntimeconfig.cache
 e:\DOC\Data_structure-algorithms\code_snippet\InfixToPostfix\obj\Debug\net8.0\ref\InfixToPostfix.dll
+e:\DOC\Data_structure-algorithms\code_snippet\InfixToPostfix\obj\Debug\net8.0\InfixToPostfix.sourcelink.json
